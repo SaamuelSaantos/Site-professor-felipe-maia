@@ -1,0 +1,152 @@
+@media (max-width: 980px) {
+  .hero-grid,
+  .about-grid,
+  .contact-grid,
+  .podpro-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .specialization-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .podpro-links {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 760px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: calc(100% + 0.5rem);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: rgba(7, 24, 39, 0.96);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-list.is-open {
+    display: flex;
+  }
+
+  .nav-list a {
+    width: 100%;
+    padding: 0.4rem 0;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .hero-section {
+    padding-top: 48px;
+    padding-bottom: 70px;
+  }
+
+  .section {
+    padding: 78px 0;
+  }
+
+  .hero-stats,
+  .timeline,
+  .cards-grid,
+  .form-row,
+  .stats-grid,
+  .services-grid,
+  .specialization-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  .portrait-card img {
+    height: 420px;
+  }
+
+  .cta-box {
+    padding: 2rem 1.2rem;
+  }
+
+  .contact-card,
+  .contact-cta-panel {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-actions .btn,
+  .btn {
+    width: 100%;
+  }
+
+  .header-inner {
+    min-height: 72px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: min(100% - 1.2rem, 1180px);
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .podpro-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .whatsapp-float {
+    width: 58px;
+    height: 58px;
+    right: 0.9rem;
+    bottom: 0.9rem;
+  }
+
+  .section-header h2 {
+    font-size: clamp(1.75rem, 7vw, 2.6rem);
+  }
+
+  .contact-list li {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1.2rem 0;
+  }
+}
